@@ -15,7 +15,7 @@ def primeFactor(n):
                 divisor += 2
             total += divisor
             n = n/divisor
-    print(totoal)
+    print(total)
 
 n = int(input("Please Enter number: "))
 primeFactor(n)

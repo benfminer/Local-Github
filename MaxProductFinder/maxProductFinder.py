@@ -9,15 +9,14 @@ def maxProductFinder(l):
     print(sortL)
     product += max(sortL)
     print(product)
-    print(sortL.pop(0) * sortL.pop(1))
+    print(sortL[0] * sortL[1])
+
     print(sortL)
-    """
-    if sortL[0]*sortL[1] > sortL[len(sortL)- 2]*sortL(len(sortL) - 3):
+    if (sortL[0] * sortL[1]) > sortL[len(sortL)- 2] * sortL[(len(sortL) - 3)]:
         product *= sortL[0]*sortL[1]
     else:
-        product *= sortL[len(sortL)- 2]*sortL(len(sortL) - 3)
+        product *= sortL[len(sortL)- 2]*sortL[(len(sortL) - 3)]
     return product
-    """
 
 test = [-6, -8, 4, 2, 5, 3, -1, 9, 10]
 print(maxProductFinder(test))
